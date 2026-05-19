@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery - ZEFTY MC</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+        <img src="https://zefty.store/images/zefty.png">
+        <h1>ZEFTY MC</h1>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/rules/">Rules</a>
+        <a href="/contact/">Contact</a>
+        <a href="/store/">Store</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>SERVER GALLERY</h1>
+
+        <p>
+            Moments, builds, memories, and chaos from the ZEFTY MC community.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery-section">
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+            <img src="https://cdn.discordapp.com/attachments/1220407003982331924/1244621070997393439/2024-05-27_19.53.27.png?ex=6a031633&is=6a01c4b3&hm=534734f74026a5ede5dd85a07df522ecc8f230995a137b078ecfe864871fd40e&">
+        </div>
+
+        <div class="gallery-item reveal">
+            <img src="https://cdn.discordapp.com/attachments/1220407003982331924/1244620955230142515/2024-05-27_19.39.20.png?ex=6a031617&is=6a01c497&hm=76d41d48b8369dc0f8a682abb9ce55f681b59341505cbae92e6615a1db399947&">
+        </div>
+
+        <div class="gallery-item reveal">
+            <img src="https://cdn.discordapp.com/attachments/1220407003982331924/1244621070997393439/2024-05-27_19.53.27.png?ex=6a031633&is=6a01c4b3&hm=534734f74026a5ede5dd85a07df522ecc8f230995a137b078ecfe864871fd40e&">
+        </div>
+
+        <div class="gallery-item reveal">
+            <img src="https://cdn.discordapp.com/attachments/1220407003982331924/1244620955230142515/2024-05-27_19.39.20.png?ex=6a031617&is=6a01c497&hm=76d41d48b8369dc0f8a682abb9ce55f681b59341505cbae92e6615a1db399947&">
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 ZEFTY MC — Community Memories</p>
+</footer>
+
+<!-- EFFECTS -->
+
+<div class="cursor-glow"></div>
+
+<script>
+
+const glow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', e => {
+
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+
+});
+
+const reveals = document.querySelectorAll('.reveal');
+
+function revealSections(){
+
+    reveals.forEach(reveal => {
+
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+
+        if(revealTop < windowHeight - 100){
+            reveal.classList.add('active');
+        }
+
+    });
+
+}
+
+revealSections();
+
+window.addEventListener('scroll', revealSections);
+
+</script>
+
+</body>
+</html>
