@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rules - ZEFTY MC</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+        <img src="https://zefty.store/images/zefty.png">
+        <h1>ZEFTY MC</h1>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/rules/">Rules</a>
+        <a href="/contact/">Contact</a>
+        <a href="/store/">Store</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>SERVER RULES</h1>
+
+        <p>
+            Keep the community fun, fair, and enjoyable for everyone.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- RULES -->
+
+<section class="rules-section">
+
+    <div class="rule-card reveal">
+
+        <span>01</span>
+
+        <div>
+            <h2>No Cheating</h2>
+
+            <p>
+                Hacks, x-ray, auto clickers, dupes, and unfair advantages are strictly prohibited.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="rule-card reveal">
+
+        <span>02</span>
+
+        <div>
+            <h2>Respect Everyone</h2>
+
+            <p>
+                Toxicity, harassment, hate speech, and personal attacks are not tolerated.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="rule-card reveal">
+
+        <span>03</span>
+
+        <div>
+            <h2>No Griefing</h2>
+
+            <p>
+                Destroying builds, stealing items, or intentionally ruining player progress is forbidden.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="rule-card reveal">
+
+        <span>04</span>
+
+        <div>
+            <h2>No Lag Machines</h2>
+
+            <p>
+                Any build or mechanism designed to intentionally lag the server will be removed.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="rule-card reveal">
+
+        <span>05</span>
+
+        <div>
+            <h2>Use Common Sense</h2>
+
+            <p>
+                If something negatively affects the community or server experience, don't do it.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 ZEFTY MC — Play Fair</p>
+</footer>
+
+<!-- EFFECTS -->
+
+<div class="cursor-glow"></div>
+
+<script>
+
+const glow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', e => {
+
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+
+});
+
+const reveals = document.querySelectorAll('.reveal');
+
+function revealSections(){
+
+    reveals.forEach(reveal => {
+
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+
+        if(revealTop < windowHeight - 100){
+            reveal.classList.add('active');
+        }
+
+    });
+
+}
+
+revealSections();
+
+window.addEventListener('scroll', revealSections);
+
+</script>
+
+</body>
+</html>
