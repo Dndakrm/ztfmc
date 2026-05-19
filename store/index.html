@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Store - ZEFTY MC</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+        <img src="https://zefty.store/images/zefty.png">
+        <h1>ZEFTY MC</h1>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/rules/">Rules</a>
+        <a href="/contact/">Contact</a>
+        <a href="/store/">Store</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>SERVER STORE</h1>
+
+        <p>
+            Support ZEFTY MC and unlock cosmetic perks, ranks, and future content.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- STORE -->
+
+<section class="store-section">
+
+    <div class="store-card reveal">
+
+        <h2>COMING SOON</h2>
+
+        <p>
+            The ZEFTY MC store is currently under development.
+        </p>
+
+        <p>
+            Future content may include:
+        </p>
+
+        <ul>
+
+            <li>Premium Ranks</li>
+            <li>Cosmetic Perks</li>
+            <li>Particles & Effects</li>
+            <li>Special Titles</li>
+            <li>Server Support Packages</li>
+
+        </ul>
+
+        <br>
+
+        <a href="/contact/" class="main-btn">
+            CONTACT US
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 ZEFTY MC — Support The Community</p>
+</footer>
+
+<!-- EFFECTS -->
+
+<div class="cursor-glow"></div>
+
+<script>
+
+const glow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', e => {
+
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+
+});
+
+const reveals = document.querySelectorAll('.reveal');
+
+function revealSections(){
+
+    reveals.forEach(reveal => {
+
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+
+        if(revealTop < windowHeight - 100){
+            reveal.classList.add('active');
+        }
+
+    });
+
+}
+
+revealSections();
+
+window.addEventListener('scroll', revealSections);
+
+</script>
+
+</body>
+</html>
