@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - ZEFTY MC</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+        <img src="https://zefty.store/images/zefty.png">
+        <h1>ZEFTY MC</h1>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/rules/">Rules</a>
+        <a href="/contact/">Contact</a>
+        <a href="/store/">Store</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>CONTACT US</h1>
+
+        <p>
+            Need help, want to collaborate, or have questions about ZEFTY MC?
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section">
+
+    <div class="contact-card reveal">
+
+        <h2>Email</h2>
+
+        <p>
+            zeftysmp@gmail.com
+        </p>
+
+    </div>
+
+    <div class="contact-card reveal">
+
+        <h2>Instagram</h2>
+
+        <p>
+            @zefty.id
+        </p>
+
+    </div>
+
+    <div class="contact-card reveal">
+
+        <h2>TikTok</h2>
+
+        <p>
+            @zefty.id
+        </p>
+
+    </div>
+
+    <div class="contact-card reveal">
+
+        <h2>Discord</h2>
+
+        <p>
+        <a href="https://discord.gg/G9bkcrvzmv" class="main-btn">Click Here</a>
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 ZEFTY MC — Stay Connected</p>
+</footer>
+
+<!-- EFFECTS -->
+
+<div class="cursor-glow"></div>
+
+<script>
+
+const glow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', e => {
+
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+
+});
+
+const reveals = document.querySelectorAll('.reveal');
+
+function revealSections(){
+
+    reveals.forEach(reveal => {
+
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+
+        if(revealTop < windowHeight - 100){
+            reveal.classList.add('active');
+        }
+
+    });
+
+}
+
+revealSections();
+
+window.addEventListener('scroll', revealSections);
+
+</script>
+
+</body>
+</html>
