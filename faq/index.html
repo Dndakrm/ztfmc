@@ -1,146 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>FAQ - ZEFTY MC</title>
+    <!-- SEO Primary Meta Tags -->
+    <title>Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN</title>
+    <meta name="title" content="Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta name="description" content="Answers to common questions about joining ZEFTY MC Season 7: Project Sovereign. Connection IPs, default port 19132 for Bedrock, version support (1.18 to latest), and griefing policies.">
+    <meta name="keywords" content="ZEFTY MC FAQ, Minecraft Server Port, Bedrock Port 19132, Minecraft Crossplay Server, Project Sovereign IP, Towny Server Rules">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#d4af37">
+    <link rel="canonical" href="https://zeftymc.com/faq/">
 
-<link rel="stylesheet" href="../style.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zeftymc.com/faq/">
+    <meta property="og:title" content="Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta property="og:description" content="Learn how to connect via Java and Bedrock, supported client versions, claiming rules, and server policies.">
+    <meta property="og:image" content="https://zefty.store/images/zefty.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zeftymc.com/faq/">
+    <meta property="twitter:title" content="Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta property="twitter:description" content="Connection details, version compatibility, and rules for ZEFTY MC Season 7.">
+    <meta property="twitter:image" content="https://zefty.store/images/zefty.png">
+
+    <!-- Structured Data (JSON-LD FAQ Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the server address and port to connect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Java players connect directly using play.zeftymc.com without any custom port numbers. Bedrock players connect using Server Address play.zeftymc.com and the default Bedrock port 19132."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Minecraft versions are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The native server version runs on 1.21, but players running versions down to 1.18 through the latest release can connect seamlessly. 1.20+ is recommended for optimal feature support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can cracked accounts join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, both official premium Mojang/Microsoft accounts and offline/cracked clients are supported with in-game authentication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is griefing allowed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unclaimed land in the wilderness is vulnerable, but claimed towns and national territories are protected by Towny. Explosions automatically rollback damaged blocks and container contents."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-
     <div class="logo-area">
-        <img src="https://zefty.store/images/zefty.png">
-        <h1>ZEFTY MC</h1>
+        <img src="https://zefty.store/images/zefty.png" alt="ZEFTY MC Logo" class="server-logo">
+        <div class="brand-text">
+            <h1>ZEFTY MC</h1>
+            <span>PROJECT SOVEREIGN</span>
+        </div>
     </div>
 
     <nav>
         <a href="/">Home</a>
+        <a href="/how-to-play/">How To Play</a>
         <a href="/about/">About</a>
         <a href="/gallery/">Gallery</a>
-        <a href="/faq/">FAQ</a>
+        <a href="/faq/" class="nav-highlight">FAQ</a>
         <a href="/rules/">Rules</a>
         <a href="/contact/">Contact</a>
         <a href="/store/">Store</a>
     </nav>
-
 </header>
 
 <!-- HERO -->
-
 <section class="hero">
-
     <div class="hero-content">
-
+        <div class="season-badge">CITIZEN ARCHIVES</div>
         <h1>FREQUENTLY ASKED QUESTIONS</h1>
-
         <p>
-            Everything you need to know before joining ZEFTY MC.
+            Everything you need to know about connections, platform crossplay, client versions, and sovereign governance.
         </p>
-
     </div>
-
 </section>
 
-<!-- FAQ -->
-
+<!-- FAQ ENTRIES -->
 <section class="faq-section">
 
+    <!-- CONNECTION & PORTS -->
     <div class="faq-box reveal">
-
-        <h2>Is ZEFTY MC cracked?</h2>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <i class="fa-solid fa-network-wired" style="color: #ffd700; font-size: 1.2rem;"></i>
+            <h2 style="margin-bottom: 0;">How do I connect to the server?</h2>
+        </div>
         <p>
-            Yes, both premium and cracked Minecraft players can join.
+            Connect directly using our universal domain <strong>play.zeftymc.com</strong>:
         </p>
-
+        <div style="margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
+            <div style="background: rgba(7, 6, 10, 0.6); padding: 14px 18px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                <strong style="color: #ffd700; display: block; margin-bottom: 4px;"><i class="fa-brands fa-java" style="margin-right: 6px;"></i>Java Edition</strong>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #ffffff;">play.zeftymc.com</span>
+                <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 4px;">No port suffix needed (default :25565 resolved automatically).</span>
+            </div>
+            <div style="background: rgba(7, 6, 10, 0.6); padding: 14px 18px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                <strong style="color: #ffd700; display: block; margin-bottom: 4px;"><i class="fa-solid fa-mobile-screen" style="margin-right: 6px;"></i>Bedrock Edition</strong>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #ffffff;">IP: play.zeftymc.com</span><br>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #ffd700;">Port: 19132</span>
+                <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 4px;">Uses the standard default Bedrock port.</span>
+            </div>
+        </div>
     </div>
 
+    <!-- VERSION SUPPORT -->
     <div class="faq-box reveal">
-
-        <h2>What version is supported?</h2>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <i class="fa-solid fa-code-branch" style="color: #ffd700; font-size: 1.2rem;"></i>
+            <h2 style="margin-bottom: 0;">What versions can join?</h2>
+        </div>
         <p>
-            The server supports modern Minecraft Java versions starting from 1.21.4 with cross-version compatibility.
+            The world runs natively on <strong>1.21</strong> with backwards compatibility supporting clients from <strong>1.18 up to the latest release</strong>. For the smoothest gameplay, latest block models, and optimal visual fidelity, client versions <strong>1.20 and above</strong> are strongly recommended.
         </p>
-
     </div>
 
+    <!-- CRACKED & PREMIUM -->
     <div class="faq-box reveal">
-
-        <h2>Can Bedrock players join?</h2>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <i class="fa-solid fa-key" style="color: #ffd700; font-size: 1.2rem;"></i>
+            <h2 style="margin-bottom: 0;">Is ZEFTY MC free / cracked friendly?</h2>
+        </div>
         <p>
-            Yes, Bedrock support is planned and may already be available depending on server updates.
+            Yes. Both official premium Mojang/Microsoft accounts and offline/cracked players can join. Official accounts authenticate automatically, while non-premium players secure their identity through our password registration system.
         </p>
-
     </div>
 
+    <!-- GRIEFING & PROTECTION -->
     <div class="faq-box reveal">
-
-        <h2>Is griefing allowed?</h2>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <i class="fa-solid fa-shield-halved" style="color: #ffd700; font-size: 1.2rem;"></i>
+            <h2 style="margin-bottom: 0;">Is griefing allowed?</h2>
+        </div>
         <p>
-            No. Griefing, stealing, cheating, or exploiting ruins the community experience.
+            Unclaimed wilderness has no protection and is subject to open-world survival risks. However, land claimed under a <strong>Towny settlement</strong> is protected. In the event of accidental creeper detonations or mob attacks inside your borders, our rollback system will automatically reconstruct the destroyed blocks and restore the contents of damaged chests.
         </p>
-
     </div>
 
+    <!-- HOW TO PLAY / COMMANDS -->
     <div class="faq-box reveal">
-
-        <h2>How do I join?</h2>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+            <i class="fa-solid fa-book-bookmark" style="color: #ffd700; font-size: 1.2rem;"></i>
+            <h2 style="margin-bottom: 0;">Where can I learn the mechanics and commands?</h2>
+        </div>
         <p>
-            Go to the Join page and follow the setup instructions by clicking
-            <a href="/how-to-join/"><strong>here</strong></a>
+            Visit our dedicated <a href="/how-to-play/" style="color: #ffd700; font-weight: 600; text-decoration: none;">How To Play Guide</a> for instructions on town founding, land expansion costs, treasury deposits, and custom enchantment setups.
         </p>
-
     </div>
 
 </section>
 
 <footer>
-    <p>© 2026 ZEFTY MC — FAQ</p>
+    <p>© 2026 ZEFTY MC — All Rights Reserved</p>
+    <a href="https://phantomichost.com/" target="_blank" rel="noopener noreferrer" class="host-link">Powered by PHANTOMIC HOST</a>
 </footer>
 
-<!-- EFFECTS -->
-
+<!-- CURSOR GLOW EFFECT -->
 <div class="cursor-glow"></div>
 
 <script>
-
 const glow = document.querySelector('.cursor-glow');
-
 document.addEventListener('mousemove', e => {
-
     glow.style.left = e.clientX + 'px';
     glow.style.top = e.clientY + 'px';
-
 });
 
 const reveals = document.querySelectorAll('.reveal');
-
 function revealSections(){
-
     reveals.forEach(reveal => {
-
         const windowHeight = window.innerHeight;
         const revealTop = reveal.getBoundingClientRect().top;
-
         if(revealTop < windowHeight - 100){
             reveal.classList.add('active');
         }
-
     });
-
 }
 
 revealSections();
-
 window.addEventListener('scroll', revealSections);
-
 </script>
 
 </body>
