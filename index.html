@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZEFTY MC</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Primary Meta Tags -->
+    <title>ZEFTY MC S7: PROJECT SOVEREIGN | Hardcore Civilization SMP</title>
+    <meta name="title" content="ZEFTY MC S7: PROJECT SOVEREIGN | Hardcore Civilization SMP">
+    <meta name="description" content="ZEFTY MC Season 7: Project Sovereign. A gritty, unscripted medieval civilization SMP with dual-layer geopolitics (Towny + Clans), custom terrain, automated bounties, and a player-driven economy. Full Java & Bedrock crossplay.">
+    <meta name="keywords" content="Minecraft, Civilization SMP, Minecraft Server, Project Sovereign, ZEFTY MC, Towny, Java Bedrock Crossplay, Hardcore Survival, Medieval Minecraft">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#d4af37">
+    <link rel="canonical" href="https://zeftymc.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zeftymc.com/">
+    <meta property="og:title" content="ZEFTY MC S7: PROJECT SOVEREIGN | Hardcore Civilization SMP">
+    <meta property="og:description" content="Build empires, enforce laws, or lead nomadic outlaw clans. Unscripted 1.21 Civilization SMP featuring Towny, automated bounties, and player-driven economies.">
+    <meta property="og:image" content="https://zefty.store/images/zefty.png">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zeftymc.com/">
+    <meta property="twitter:title" content="ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta property="twitter:description" content="A gritty, unscripted medieval civilization SMP with dual-layer politics and player economies. Join now on Java & Bedrock!">
+    <meta property="twitter:image" content="https://zefty.store/images/zefty.png">
+
+    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "ZEFTY MC S7: PROJECT SOVEREIGN",
+      "genre": ["Civilization", "Survival Multiplayer", "Sandbox", "Roleplay"],
+      "gamePlatform": ["PC", "Mobile", "Console"],
+      "operatingSystem": ["Java", "Bedrock"],
+      "url": "https://zeftymc.com/",
+      "description": "Hardcore medieval civilization Minecraft SMP with Towny geopolitics, outlaw clans, and organic player-driven governance."
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
 <header>
     <div class="logo-area">
-        <img src="https://zefty.store/images/zefty.png">
-        <h1>ZEFTY MC</h1>
+        <img src="https://zefty.store/images/zefty.png" alt="ZEFTY MC Logo" class="server-logo">
+        <div class="brand-text">
+            <h1>ZEFTY MC</h1>
+            <span>PROJECT SOVEREIGN</span>
+        </div>
     </div>
 
     <nav>
         <a href="/">Home</a>
+        <a href="/how-to-play/" class="nav-highlight">How To Play</a>
         <a href="/about/">About</a>
         <a href="/gallery/">Gallery</a>
         <a href="/faq/">FAQ</a>
@@ -29,73 +73,81 @@
 </header>
 
 <section class="hero">
-
     <div class="hero-content">
-        <h1>THE RETURN OF<br>ZEFTY MC</h1>
+        <div class="season-badge">SEASON VII</div>
+        <h1>PROJECT<br>SOVEREIGN</h1>
 
         <p>
-            A public Minecraft survival multiplayer experience built by players,
-            for players. Originally created by ZEDD & FROSTY in 2024.
+            An unscripted medieval civilization SMP. Forge physical empires through Towny, 
+            rule the wilderness as an outlaw clan, and shape an organic, player-governed world 
+            across custom terrain with full Java & Bedrock crossplay.
         </p>
 
         <div class="hero-buttons">
-            <a href="/how-to-join/" class="main-btn">PLAY NOW</a>
-            <a href="https://discord.gg/G9bkcrvzmv" class="secondary-btn">DISCORD</a>
-            <a href="/about/" class="secondary-btn">MORE INFO</a>
+            <a href="/how-to-play/" class="main-btn">HOW TO PLAY</a>
+            <a href="/how-to-join/" class="secondary-btn">JOIN SERVER</a>
+            <a href="https://discord.gg/G9bkcrvzmv" target="_blank" rel="noopener noreferrer" class="secondary-btn">DISCORD</a>
         </div>
 
-        <div class="server-ip">
-            play.zeftymc.fun
+        <div class="status-box">
+            <div class="pulse"></div>
+            <span class="server-ip-text" onclick="navigator.clipboard.writeText('play.zeftymc.com'); alert('IP Copied to Clipboard!');">play.zeftymc.com</span>
+            <span class="crossplay-tag">Java & Bedrock (1.18 - Latest)</span>
         </div>
     </div>
-
 </section>
 
 <section class="features">
-
     <div class="card">
-        <h2>COMMUNITY SMP</h2>
-        <p>Build, survive, grind, and create memories together.</p>
+        <div class="card-icon"><i class="fa-solid fa-crown"></i></div>
+        <h2>DUAL-LAYER GEOPOLITICS</h2>
+        <p>Manage territory, claim chunks, and collect city upkeep with <strong>Towny</strong>, while operating tactical war bands, trade guilds, or bandit syndicates with <strong>BetterTeams</strong>.</p>
     </div>
 
     <div class="card">
-        <h2>PLAYER ECONOMY</h2>
-        <p>Trade with others and build your own empire.</p>
+        <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <h2>PLAYER-DRIVEN TRADE</h2>
+        <p>No infinite admin handouts. Raw logs, ores, and crops are seeded through player labor, with decentralized player chest shops driving the true server economy.</p>
     </div>
 
     <div class="card">
-        <h2>ACTIVE STAFF</h2>
-        <p>Maintained directly by the original creators of ZEFTY.</p>
+        <div class="card-icon"><i class="fa-solid fa-skull-crossbones"></i></div>
+        <h2>AUTOMATED BOUNTIES</h2>
+        <p>Wanderers are protected by automated karma laws, while notorious criminals face server-wide bounties. Hunt the hunted or reign as public enemy #1.</p>
     </div>
 
+    <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h2>SURVIVAL INTEGRITY</h2>
+        <p>Strict survival administration. Staff play by the exact same resource constraints and vulnerability rules as all citizens—no creative cheats or unfair advantages.</p>
+    </div>
 </section>
 
 <section class="about-preview">
-
     <div class="about-box">
-        <h2>OUR STORY</h2>
+        <div class="about-tag">THE REIGN BEGINS</div>
+        <h2>FORGE YOUR LEGACY</h2>
 
         <p>
-            ZEFTY was created by two friends known as
-            <strong>ZEDD</strong> and <strong>FROSTY</strong>.
-            The name came from combining their aliases:
-            ZEdd + FrosTY.
+            Founded by <strong>ZEDD</strong> and <strong>FROSTY</strong> in 2024, ZEFTY returns with its most ambitious chapter yet. 
+            Project Sovereign replaces scripted roleplay with authentic emergent politics, ruthless economics, and deep kingdom survival.
         </p>
 
         <p>
-            What started as a small private SMP in 2024 slowly turned into
-            a growing Minecraft community. After a year-long hiatus,
-            the two creators are finally back.
+            Whether you govern a walled capital, establish isolated homesteads, or roam the wild frontier, 
+            the sovereign destiny of the realm is written solely by the players who claim it.
         </p>
 
-        <a href="/about/" class="main-btn">READ MORE</a>
+        <div class="about-buttons">
+            <a href="/how-to-play/" class="main-btn">LEARN MECHANICS</a>
+            <a href="/about/" class="secondary-btn">READ OUR STORY</a>
+        </div>
     </div>
-
 </section>
 
 <footer>
     <p>© 2026 ZEFTY MC — All Rights Reserved</p>
-    <a href="https://phantomichost.com/" class="server-ip">Powered by PHANTOMIC HOST</a>
+    <a href="https://phantomichost.com/" target="_blank" rel="noopener noreferrer" class="host-link">Powered by PHANTOMIC HOST</a>
 </footer>
 
 </body>
