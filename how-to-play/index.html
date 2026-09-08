@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How To Play & Mechanics Guide | ZEFTY MC S7: PROJECT SOVEREIGN</title>
+    <meta name="title" content="How To Play & Mechanics Guide | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta name="description" content="Learn the fundamental mechanics of ZEFTY MC Season 7: Project Sovereign. Complete guide for establishing towns, claiming territory, managing town banks, crater rollbacks, and unlocking custom enchantments.">
+    <meta name="keywords" content="Minecraft How To Play, ZEFTY MC Guide, Towny Commands, Towny Claim, Custom Enchantments Minecraft, Minecraft Civilization Guide">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#d4af37">
+    <link rel="canonical" href="https://zeftymc.com/how-to-play/">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zeftymc.com/how-to-play/">
+    <meta property="og:title" content="How To Play | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta property="og:description" content="Master the core mechanics: Town establishment, land expansions, explosion rollback protection, and enchanting setups.">
+    <meta property="og:image" content="https://zefty.store/images/zefty.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zeftymc.com/how-to-play/">
+    <meta property="twitter:title" content="How To Play | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta property="twitter:description" content="Official survival and civilization mechanics guide for ZEFTY MC Season 7.">
+    <meta property="twitter:image" content="https://zefty.store/images/zefty.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Establish a Town and Play on ZEFTY MC",
+      "description": "A player guide on how to establish towns, fund municipal banks, and unlock custom enchants on ZEFTY MC Season 7.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Create a Town",
+          "text": "Run /t create <name> to register your town settlement."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Deposit Funds",
+          "text": "Deposit currency into your municipal treasury using /t deposit <amount>."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Claim Land",
+          "text": "Expand and secure borders by running /t claim for 25 balance per chunk."
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        .guide-container {
+            padding: 80px 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .guide-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .guide-header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .guide-header p {
+            color: #a8a8a8;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .mechanic-section {
+            background: rgba(16, 14, 22, 0.85);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 45px;
+            margin-bottom: 45px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .mechanic-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            padding-bottom: 16px;
+        }
+
+        .mechanic-title i {
+            font-size: 1.8rem;
+            color: #ffd700;
+        }
+
+        .mechanic-title h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .command-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+
+        .command-row {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background: rgba(7, 6, 10, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 16px 20px;
+            transition: 0.3s ease;
+        }
+
+        .command-row:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateX(4px);
+        }
+
+        .cmd-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            color: #ffd700;
+            background: rgba(212, 175, 55, 0.12);
+            padding: 6px 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            white-space: nowrap;
+        }
+
+        .cmd-desc {
+            color: #c9c9c9;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .feature-callout {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            background: rgba(212, 175, 55, 0.05);
+            border-left: 4px solid #d4af37;
+            padding: 24px;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+
+        .callout-media {
+            max-width: 320px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+        }
+
+        .callout-media img {
+            width: 100%;
+            display: block;
+        }
+
+        .callout-text h3 {
+            font-family: 'Cinzel', serif;
+            color: #ffd700;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .callout-text p {
+            color: #b5b5b5;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Enchants Showcase Gallery */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        .showcase-item {
+            background: rgba(7, 6, 10, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .showcase-item:hover {
+            transform: translateY(-6px);
+            border-color: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+        }
+
+        .showcase-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .showcase-caption {
+            padding: 14px 18px;
+            font-size: 0.9rem;
+            color: #b8b8b8;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(16, 14, 22, 0.9);
+        }
+
+        @media (max-width: 850px) {
+            .feature-callout {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .callout-media {
+                max-width: 100%;
+            }
+            .command-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .guide-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <img src="https://zefty.store/images/zefty.png" alt="ZEFTY MC Logo" class="server-logo">
+        <div class="brand-text">
+            <h1>ZEFTY MC</h1>
+            <span>PROJECT SOVEREIGN</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/how-to-play/" class="nav-highlight">How To Play</a>
+        <a href="/about/">About</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/rules/">Rules</a>
+        <a href="/contact/">Contact</a>
+        <a href="/store/">Store</a>
+    </nav>
+</header>
+
+<main class="guide-container">
+
+    <div class="guide-header">
+        <div class="season-badge">OFFICIAL PLAYER CODEX</div>
+        <h1>HOW TO PLAY</h1>
+        <p>Master sovereign mechanics to defend your settlement, secure territories, and harness arcane power across the realm.</p>
+    </div>
+
+    <section class="mechanic-section">
+        <div class="mechanic-title">
+            <i class="fa-solid fa-flag"></i>
+            <h2>1. FOUNDING & EXPANDING YOUR TOWN</h2>
+        </div>
+
+        <p style="color: #b8b8b8; margin-bottom: 24px; line-height: 1.8;">
+            All territory claiming is managed through <strong>Towny</strong>. You must officially found a settlement before staking claims in the wild.
+        </p>
+
+        <div class="command-list">
+            <div class="command-row">
+                <span class="cmd-code">/t create &lt;town_name&gt;</span>
+                <span class="cmd-desc">Founds your initial town settlement and establishes your town homeblock. Must be run before claiming any surrounding wilderness.</span>
+            </div>
+
+            <div class="command-row">
+                <span class="cmd-code">/t deposit &lt;amount&gt;</span>
+                <span class="cmd-desc">Deposits your personal balance into your town's central treasury. Land expansion requires municipal funds to complete.</span>
+            </div>
+
+            <div class="command-row">
+                <span class="cmd-code">/t claim</span>
+                <span class="cmd-desc">Claims the chunk you are standing on for your town. Each land expansion costs <strong>25 balance</strong> deducted directly from the town bank.</span>
+            </div>
+        </div>
+
+        <div class="feature-callout">
+            <div class="callout-media">
+                <img src="https://zefty.store/images/creeper-crater.gif" alt="Towny Regeneration Animation" loading="lazy">
+            </div>
+            <div class="callout-text">
+                <h3><i class="fa-solid fa-shield-heart" style="color:#ffd700; margin-right: 8px;"></i>Automatic Explosion Rollback</h3>
+                <p>
+                    If a creeper or explosion damages your claimed land, don't panic! Towny features automated terrain regeneration: the cratered ground and your destroyed chest contents will automatically rebuild and restore back to their original state.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mechanic-section">
+        <div class="mechanic-title">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h2>2. CUSTOM ENCHANTMENTS</h2>
+        </div>
+
+        <p style="color: #b8b8b8; margin-bottom: 20px; line-height: 1.8;">
+            You do not need awkward GUI menus or complex altars to get endgame power. Custom enchantments are integrated directly into standard vanilla mechanics—simply construct a regular enchanting table setup surrounded by bookshelves to roll sovereign enchantments.
+        </p>
+
+        <div class="showcase-grid">
+            <div class="showcase-item">
+                <img src="https://zefty.store/images/Screenshot%202026-09-08%20163736.png" alt="Vanilla Enchanting Table Setup" loading="lazy">
+                <div class="showcase-caption">
+                    <i class="fa-solid fa-circle-info" style="color: #ffd700; margin-right: 6px;"></i> Standard 15-bookshelf arrangement unlocks tier-3 custom rolls.
+                </div>
+            </div>
+
+            <div class="showcase-item">
+                <img src="https://zefty.store/images/Screenshot%202026-09-08%20163723.png" alt="Custom Enchantment Showcase" loading="lazy">
+                <div class="showcase-caption">
+                    <i class="fa-solid fa-sparkles" style="color: #ffd700; margin-right: 6px;"></i> Unique sovereign combat, utility, and harvesting enchants revealed on roll.
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 ZEFTY MC — All Rights Reserved</p>
+    <a href="https://phantomichost.com/" target="_blank" rel="noopener noreferrer" class="host-link">Powered by PHANTOMIC HOST</a>
+</footer>
+
+</body>
+</html>
