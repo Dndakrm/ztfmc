@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>How To Join - ZEFTY MC</title>
+    <!-- SEO Primary Meta Tags -->
+    <title>How To Join Java & Bedrock | ZEFTY MC S7: PROJECT SOVEREIGN</title>
+    <meta name="title" content="How To Join Java & Bedrock | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta name="description" content="Step-by-step connection guide for ZEFTY MC Season 7: Project Sovereign. Connect with Java using play.zeftymc.com or Bedrock with default port 19132. Compatible from 1.18 to latest (1.20+ recommended).">
+    <meta name="keywords" content="How to Join ZEFTY MC, Minecraft Server IP, Bedrock Connection Port 19132, Minecraft Crossplay Setup, Project Sovereign Connection">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#d4af37">
+    <link rel="canonical" href="https://zeftymc.com/how-to-join/">
 
-<link rel="stylesheet" href="../style.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zeftymc.com/how-to-join/">
+    <meta property="og:title" content="How To Join | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta property="og:description" content="Connect to Project Sovereign on PC, Console, or Mobile. Java direct IP and Bedrock port 19132 setup instructions.">
+    <meta property="og:image" content="https://zefty.store/images/zefty.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zeftymc.com/how-to-join/">
+    <meta property="twitter:title" content="How To Join | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta property="twitter:description" content="Connection setup guide for Java and Bedrock crossplay on ZEFTY MC Season 7.">
+    <meta property="twitter:image" content="https://zefty.store/images/zefty.png">
+
+    <!-- Structured Data (JSON-LD HowTo Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Join ZEFTY MC S7: Project Sovereign",
+      "description": "Step-by-step instructions to connect to ZEFTY MC on both Minecraft Java Edition and Minecraft Bedrock Edition.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Launch Minecraft",
+          "text": "Open your Minecraft client (version 1.18 to latest, 1.20+ recommended)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Add Server",
+          "text": "Navigate to Multiplayer or Servers and select Add Server."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Enter Connection Details",
+          "text": "Use Server Address play.zeftymc.com. For Bedrock Edition, ensure port is set to default 19132."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Join and Authenticate",
+          "text": "Connect to the world and complete registration if running an offline-mode account."
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-
     <div class="logo-area">
-        <img src="https://zefty.store/images/zefty.png">
-        <h1>ZEFTY MC</h1>
+        <img src="https://zefty.store/images/zefty.png" alt="ZEFTY MC Logo" class="server-logo">
+        <div class="brand-text">
+            <h1>ZEFTY MC</h1>
+            <span>PROJECT SOVEREIGN</span>
+        </div>
     </div>
 
     <nav>
         <a href="/">Home</a>
+        <a href="/how-to-play/">How To Play</a>
         <a href="/about/">About</a>
         <a href="/gallery/">Gallery</a>
         <a href="/faq/">FAQ</a>
@@ -30,177 +87,141 @@
         <a href="/contact/">Contact</a>
         <a href="/store/">Store</a>
     </nav>
-
 </header>
 
 <!-- HERO -->
-
 <section class="hero">
-
     <div class="hero-content">
-
+        <div class="season-badge">GATEWAY TO THE REALM</div>
         <h1>HOW TO JOIN</h1>
-
         <p>
-            Jump into the ZEFTY MC survival experience in just a few steps.
+            Cross-platform multiplayer enabled. Enter the realm in seconds whether playing on PC, console, or mobile.
         </p>
 
-        <div class="server-box">
-            <span>SERVER IP</span>
-            <h2>play.zeftymc.fun</h2>
+        <!-- CONNECTION ADDRESS BOXES -->
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 25px;">
+            <div class="server-box" style="margin-top: 0; min-width: 280px; text-align: left; border-color: rgba(212, 175, 55, 0.3);">
+                <span style="color: #ffd700; font-weight: 600;"><i class="fa-brands fa-java" style="margin-right: 6px;"></i>JAVA EDITION</span>
+                <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: #ffffff; cursor: pointer;" onclick="navigator.clipboard.writeText('play.zeftymc.com'); alert('Java IP Copied!');">
+                    play.zeftymc.com
+                </h2>
+                <small style="color: #888; display: block; margin-top: 6px;">Standard direct connection (no port suffix required)</small>
+            </div>
+
+            <div class="server-box" style="margin-top: 0; min-width: 280px; text-align: left; border-color: rgba(212, 175, 55, 0.3);">
+                <span style="color: #ffd700; font-weight: 600;"><i class="fa-solid fa-mobile-screen" style="margin-right: 6px;"></i>BEDROCK EDITION</span>
+                <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; color: #ffffff; cursor: pointer;" onclick="navigator.clipboard.writeText('play.zeftymc.com'); alert('Bedrock IP Copied!');">
+                    play.zeftymc.com
+                </h2>
+                <small style="color: #ffd700; display: block; margin-top: 6px; font-weight: 600;">Port: 19132 <span style="color: #888; font-weight: 400;">(Default Bedrock Port)</span></small>
+            </div>
         </div>
-
     </div>
-
 </section>
 
-<!-- STEPS -->
-
+<!-- STEP-BY-STEP GUIDES -->
 <section class="join-section">
 
     <div class="join-card reveal">
-
         <span>01</span>
-
         <div>
-
-            <h2>Open Minecraft</h2>
-
+            <h2>Launch Minecraft</h2>
             <p>
-                Launch Minecraft Java Edition on your PC.
+                Open Minecraft on your device. The server runs natively on <strong>1.21</strong> and supports version backwards-compatibility down to <strong>1.18</strong> (clients <strong>1.20+</strong> recommended for optimal asset support).
             </p>
-
         </div>
-
     </div>
 
     <div class="join-card reveal">
-
         <span>02</span>
-
         <div>
-
-            <h2>Go To Multiplayer</h2>
-
+            <h2>Navigate to Server List</h2>
             <p>
-                Click Multiplayer then select Add Server.
+                <strong>Java:</strong> Click <em>Multiplayer</em>, then click <em>Add Server</em>.<br>
+                <strong>Bedrock:</strong> Go to the <em>Servers</em> tab, scroll to the bottom, and click <em>Add Server</em>.
             </p>
-
         </div>
-
     </div>
 
     <div class="join-card reveal">
-
         <span>03</span>
-
         <div>
-
-            <h2>Enter Server IP</h2>
-
+            <h2>Enter Server Details</h2>
             <p>
-                Use:
-                <strong>play.zeftymc.fun</strong>
+                Enter <strong>play.zeftymc.com</strong> as your Server Address. If you are on Bedrock Edition, confirm the port field is set to <strong>19132</strong>.
             </p>
-
         </div>
-
     </div>
 
     <div class="join-card reveal">
-
         <span>04</span>
-
         <div>
-
-            <h2>Join The Adventure</h2>
-
+            <h2>Join & Authenticate</h2>
             <p>
-                Survive, build, trade, and become part of the ZEFTY MC community.
+                Join the server. Premium Mojang accounts log in automatically, while cracked/offline players can secure their username with in-game registration. Review our <a href="/how-to-play/" style="color: #ffd700; font-weight: 600; text-decoration: none;">How To Play Codex</a> to begin establishing your first town!
             </p>
-
         </div>
-
     </div>
 
 </section>
 
-<!-- INFO -->
-
+<!-- PLATFORM COMPATIBILITY CARDS -->
 <section class="features">
 
     <div class="card reveal">
-
-        <h2>JAVA SUPPORT</h2>
-
+        <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
+        <h2>SEAMLESS CROSSPLAY</h2>
         <p>
-            Recommended for the best experience and full feature support.
+            Play together across PC, iOS, Android, and consoles through Floodgate and Geyser integration without platform restrictions.
         </p>
-
     </div>
 
     <div class="card reveal">
-
-        <h2>CRACKED FRIENDLY</h2>
-
+        <div class="card-icon"><i class="fa-solid fa-user-shield"></i></div>
+        <h2>ALL CLIENTS WELCOME</h2>
         <p>
-            Both premium and cracked players are welcome to join.
+            Full support for official Microsoft/Mojang accounts and offline/cracked launchers with protected account security.
         </p>
-
     </div>
 
     <div class="card reveal">
-
-        <h2>COMMUNITY DRIVEN</h2>
-
+        <div class="card-icon"><i class="fa-solid fa-book-skull"></i></div>
+        <h2>UNSCRIPTED SURVIVAL</h2>
         <p>
-            Built around survival gameplay, events, and player interaction.
+            No lobby walls or mini-game distractions. You spawn directly onto the custom sovereign landscape ready to explore and claim land.
         </p>
-
     </div>
 
 </section>
 
 <footer>
-    <p>© 2026 ZEFTY MC — See You In Game</p>
+    <p>© 2026 ZEFTY MC — All Rights Reserved</p>
+    <a href="https://phantomichost.com/" target="_blank" rel="noopener noreferrer" class="host-link">Powered by PHANTOMIC HOST</a>
 </footer>
 
-<!-- EFFECTS -->
-
+<!-- CURSOR GLOW EFFECT -->
 <div class="cursor-glow"></div>
 
 <script>
-
 const glow = document.querySelector('.cursor-glow');
-
 document.addEventListener('mousemove', e => {
-
     glow.style.left = e.clientX + 'px';
     glow.style.top = e.clientY + 'px';
-
 });
 
 const reveals = document.querySelectorAll('.reveal');
-
 function revealSections(){
-
     reveals.forEach(reveal => {
-
         const windowHeight = window.innerHeight;
         const revealTop = reveal.getBoundingClientRect().top;
-
         if(revealTop < windowHeight - 100){
             reveal.classList.add('active');
         }
-
     });
-
 }
 
 revealSections();
-
 window.addEventListener('scroll', revealSections);
-
 </script>
 
 </body>
