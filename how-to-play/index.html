@@ -4,248 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>How To Play & Mechanics Guide | ZEFTY MC S7: PROJECT SOVEREIGN</title>
-    <meta name="title" content="How To Play & Mechanics Guide | ZEFTY MC S7: PROJECT SOVEREIGN">
-    <meta name="description" content="Learn the fundamental mechanics of ZEFTY MC Season 7: Project Sovereign. Complete guide for establishing towns, claiming territory, managing town banks, crater rollbacks, and unlocking custom enchantments.">
-    <meta name="keywords" content="Minecraft How To Play, ZEFTY MC Guide, Towny Commands, Towny Claim, Custom Enchantments Minecraft, Minecraft Civilization Guide">
+    <!-- SEO Primary Meta Tags -->
+    <title>How To Play | ZEFTY MC S7: PROJECT SOVEREIGN</title>
+    <meta name="title" content="How To Play | ZEFTY MC S7: PROJECT SOVEREIGN">
+    <meta name="description" content="Master survival, fence and sign land claiming, and geopolitics in ZEFTY MC Season 7: Project Sovereign. Complete player manual for Java and Bedrock crossplay.">
+    <meta name="keywords" content="ZEFTY MC Guide, RedProtect Fence Sign Claim, Cara Claim Tanah Minecraft, Nation Commands Minecraft, Bedrock Crossplay Survival">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#d4af37">
     <link rel="canonical" href="https://zeftymc.com/how-to-play/">
 
-    <meta property="og:type" content="article">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://zeftymc.com/how-to-play/">
     <meta property="og:title" content="How To Play | ZEFTY MC S7: PROJECT SOVEREIGN">
-    <meta property="og:description" content="Master the core mechanics: Town establishment, land expansions, explosion rollback protection, and enchanting setups.">
+    <meta property="og:description" content="The classic fence & sign territory protection and sovereign nation manual on ZEFTY MC.">
     <meta property="og:image" content="https://zefty.store/images/zefty.png">
 
+    <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://zeftymc.com/how-to-play/">
     <meta property="twitter:title" content="How To Play | ZEFTY MC S7: PROJECT SOVEREIGN">
-    <meta property="twitter:description" content="Official survival and civilization mechanics guide for ZEFTY MC Season 7.">
+    <meta property="twitter:description" content="Official RedProtect fence-claiming and sovereign commands guide.">
     <meta property="twitter:image" content="https://zefty.store/images/zefty.png">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "How to Establish a Town and Play on ZEFTY MC",
-      "description": "A player guide on how to establish towns, fund municipal banks, and unlock custom enchants on ZEFTY MC Season 7.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Create a Town",
-          "text": "Run /t create <name> to register your town settlement."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Deposit Funds",
-          "text": "Deposit currency into your municipal treasury using /t deposit <amount>."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Claim Land",
-          "text": "Expand and secure borders by running /t claim for 25 balance per chunk."
-        }
-      ]
-    }
-    </script>
 
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-
-    <style>
-        .guide-container {
-            padding: 80px 8%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .guide-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .guide-header h1 {
-            font-family: 'Cinzel', serif;
-            font-size: 3.5rem;
-            color: #ffffff;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .guide-header p {
-            color: #a8a8a8;
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        .mechanic-section {
-            background: rgba(16, 14, 22, 0.85);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            backdrop-filter: blur(20px);
-            border-radius: 24px;
-            padding: 45px;
-            margin-bottom: 45px;
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
-        }
-
-        .mechanic-title {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 25px;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-            padding-bottom: 16px;
-        }
-
-        .mechanic-title i {
-            font-size: 1.8rem;
-            color: #ffd700;
-        }
-
-        .mechanic-title h2 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.8rem;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-
-        .command-list {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            margin-bottom: 30px;
-        }
-
-        .command-row {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-            background: rgba(7, 6, 10, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            padding: 16px 20px;
-            transition: 0.3s ease;
-        }
-
-        .command-row:hover {
-            border-color: rgba(212, 175, 55, 0.4);
-            transform: translateX(4px);
-        }
-
-        .cmd-code {
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 600;
-            color: #ffd700;
-            background: rgba(212, 175, 55, 0.12);
-            padding: 6px 14px;
-            border-radius: 8px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            white-space: nowrap;
-        }
-
-        .cmd-desc {
-            color: #c9c9c9;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .feature-callout {
-            display: flex;
-            gap: 25px;
-            align-items: center;
-            background: rgba(212, 175, 55, 0.05);
-            border-left: 4px solid #d4af37;
-            padding: 24px;
-            border-radius: 12px;
-            margin-top: 25px;
-        }
-
-        .callout-media {
-            max-width: 320px;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            flex-shrink: 0;
-        }
-
-        .callout-media img {
-            width: 100%;
-            display: block;
-        }
-
-        .callout-text h3 {
-            font-family: 'Cinzel', serif;
-            color: #ffd700;
-            margin-bottom: 8px;
-            font-size: 1.2rem;
-        }
-
-        .callout-text p {
-            color: #b5b5b5;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* Enchants Showcase Gallery */
-        .showcase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 22px;
-            margin-top: 20px;
-        }
-
-        .showcase-item {
-            background: rgba(7, 6, 10, 0.6);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            border-radius: 16px;
-            overflow: hidden;
-            transition: 0.3s ease;
-        }
-
-        .showcase-item:hover {
-            transform: translateY(-6px);
-            border-color: rgba(212, 175, 55, 0.5);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
-        }
-
-        .showcase-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .showcase-caption {
-            padding: 14px 18px;
-            font-size: 0.9rem;
-            color: #b8b8b8;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            background: rgba(16, 14, 22, 0.9);
-        }
-
-        @media (max-width: 850px) {
-            .feature-callout {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .callout-media {
-                max-width: 100%;
-            }
-            .command-row {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .guide-header h1 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -271,80 +57,261 @@
     </nav>
 </header>
 
-<main class="guide-container">
-
-    <div class="guide-header">
-        <div class="season-badge">OFFICIAL PLAYER CODEX</div>
-        <h1>HOW TO PLAY</h1>
-        <p>Master sovereign mechanics to defend your settlement, secure territories, and harness arcane power across the realm.</p>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="season-badge">CITIZEN SURVIVAL GUIDE</div>
+        <h1>HOW TO SURVIVE & RULE</h1>
+        <p>
+            No complex plot maintenance debt or confusing wand tools. Stake your grief-free territory using classic fence boundaries, establish sovereign realms, and dominate the world.
+        </p>
     </div>
+</section>
 
-    <section class="mechanic-section">
-        <div class="mechanic-title">
-            <i class="fa-solid fa-flag"></i>
-            <h2>1. FOUNDING & EXPANDING YOUR TOWN</h2>
+<!-- MAIN GUIDE WRAPPER -->
+<main class="guide-wrapper">
+
+    <!-- SECTION 1: THE FIRST 10 MINUTES -->
+    <article class="guide-card reveal">
+        <div class="guide-header">
+            <div class="guide-header-icon">
+                <i class="fa-solid fa-compass"></i>
+            </div>
+            <div class="guide-header-text">
+                <h2>1. THE FIRST TEN MINUTES</h2>
+                <span>SURVIVAL COMMENCEMENT</span>
+            </div>
         </div>
 
-        <p style="color: #b8b8b8; margin-bottom: 24px; line-height: 1.8;">
-            All territory claiming is managed through <strong>Towny</strong>. You must officially found a settlement before staking claims in the wild.
+        <p style="color: #b0b0b0; line-height: 1.8;">
+            You awaken at the Royal Citadel as a <code>[Wanderer]</code>. Before establishing a mighty kingdom, prepare your basic survival inventory:
         </p>
 
-        <div class="command-list">
-            <div class="command-row">
-                <span class="cmd-code">/t create &lt;town_name&gt;</span>
-                <span class="cmd-desc">Founds your initial town settlement and establishes your town homeblock. Must be run before claiming any surrounding wilderness.</span>
+        <div class="steps-grid">
+            <div class="step-item">
+                <div class="step-number">I</div>
+                <h3>Wilderness Warp</h3>
+                <p>Run <code>/rtp</code> to teleport straight into untouched survival biomes far away from spawn.</p>
             </div>
 
-            <div class="command-row">
-                <span class="cmd-code">/t deposit &lt;amount&gt;</span>
-                <span class="cmd-desc">Deposits your personal balance into your town's central treasury. Land expansion requires municipal funds to complete.</span>
+            <div class="step-item">
+                <div class="step-number">II</div>
+                <h3>Ration Kit</h3>
+                <p>Equip yourself with starting stone armaments and sustenance using <code>/kit starter</code>.</p>
             </div>
 
-            <div class="command-row">
-                <span class="cmd-code">/t claim</span>
-                <span class="cmd-desc">Claims the chunk you are standing on for your town. Each land expansion costs <strong>25 balance</strong> deducted directly from the town bank.</span>
+            <div class="step-item">
+                <div class="step-number">III</div>
+                <h3>Earn Balance</h3>
+                <p>Level your AuraSkills attributes or sell gathered mining spoils at <code>/shop</code> to fund your land claims.</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- SECTION 2: CLASSIC FENCE & SIGN CLAIMING -->
+    <article class="guide-card reveal">
+        <div class="guide-header">
+            <div class="guide-header-icon">
+                <i class="fa-solid fa-fence"></i>
+            </div>
+            <div class="guide-header-text">
+                <h2>2. LAND CLAIMING (PAGAR & SIGN)</h2>
+                <span>CLASSIC REDPROTECT TERRITORY SETUP</span>
             </div>
         </div>
 
-        <div class="feature-callout">
-            <div class="callout-media">
-                <img src="https://zefty.store/images/creeper-crater.gif" alt="Towny Regeneration Animation" loading="lazy">
-            </div>
-            <div class="callout-text">
-                <h3><i class="fa-solid fa-shield-heart" style="color:#ffd700; margin-right: 8px;"></i>Automatic Explosion Rollback</h3>
-                <p>
-                    If a creeper or explosion damages your claimed land, don't panic! Towny features automated terrain regeneration: the cratered ground and your destroyed chest contents will automatically rebuild and restore back to their original state.
+        <p style="color: #b0b0b0; line-height: 1.8;">
+            Grief protection on Project Sovereign uses the standard Indonesian server claiming method: <strong>enclose your property with any wooden fence and place an <code>[rp]</code> sign</strong>. No wand selections or complex coordinates needed.
+        </p>
+
+        <!-- VISUAL SHOWCASE -->
+        <div class="fence-showcase">
+            <div>
+                <h3 style="font-family: 'Cinzel', serif; color: #ffd700; margin-bottom: 12px; font-size: 1.3rem;">How to Write the Sign:</h3>
+                <p style="color: #c5c5c5; line-height: 1.8; margin-bottom: 16px;">
+                    1. Enclose your base completely with a continuous perimeter of wooden fences (any wood type).<br>
+                    2. Place a regular wooden sign directly against any fence post.<br>
+                    3. On the <strong>1st line</strong>, write <code>[rp]</code>.<br>
+                    4. On the <strong>2nd line</strong>, write your desired <code>ClaimName</code>.<br>
+                    5. Leave lines 3 and 4 blank, then hit Done.
                 </p>
+                <div style="background: rgba(255,255,255,0.03); border-left: 3px solid #ffd700; padding: 12px 16px; border-radius: 8px;">
+                    <span style="font-size: 0.88rem; color: #e0e0e0;">
+                        The sign will automatically colorize into dark blue text, lock your chests, and establish grief prevention up to the sky and bedrock.
+                    </span>
+                </div>
+            </div>
+
+            <!-- CSS MINECRAFT SIGN -->
+            <div class="sign-stage">
+                <div class="mc-sign-board">
+                    <div class="sign-line header-line">[rp]</div>
+                    <div class="sign-line name-line">MyCastle</div>
+                    <div class="sign-line empty-line">---</div>
+                    <div class="sign-line empty-line">---</div>
+                </div>
+                <div class="sign-post"></div>
             </div>
         </div>
-    </section>
 
-    <section class="mechanic-section">
-        <div class="mechanic-title">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-            <h2>2. CUSTOM ENCHANTMENTS</h2>
+        <!-- CLAIM COMMANDS TABLE -->
+        <h3 style="font-family: 'Cinzel', serif; color: #ffffff; margin-top: 30px; margin-bottom: 12px; font-size: 1.2rem;">Claim Management Commands</h3>
+        <div class="guide-table-wrap">
+            <table class="guide-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Target</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/rp addmember &lt;player&gt;</code></td>
+                        <td>Ally / Friend</td>
+                        <td>Grant building, chest, and door access inside your claim.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/rp removemember &lt;player&gt;</code></td>
+                        <td>Ex-Member</td>
+                        <td>Revoke build and storage permissions immediately.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/rp delete</code></td>
+                        <td>Current Claim</td>
+                        <td>Permanently unclaim the territory you are currently standing in.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/rp info</code></td>
+                        <td>Current Claim</td>
+                        <td>Display claim owner, coordinates, block size, and active flags.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <p style="color: #b8b8b8; margin-bottom: 20px; line-height: 1.8;">
-            You do not need awkward GUI menus or complex altars to get endgame power. Custom enchantments are integrated directly into standard vanilla mechanics—simply construct a regular enchanting table setup surrounded by bookshelves to roll sovereign enchantments.
+        <div class="guide-banner">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div class="guide-banner-text">
+                <strong>Automatic Sovereign Protection</strong>
+                <p>Inside your fence perimeter, creeper craters, fire tick, chest looting, and unauthorized block breaking are completely disabled. Your build is 100% safe.</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- SECTION 3: SOVEREIGN NATION DIPLOMACY -->
+    <article class="guide-card reveal">
+        <div class="guide-header">
+            <div class="guide-header-icon">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+            <div class="guide-header-text">
+                <h2>3. SOVEREIGN NATIONS</h2>
+                <span>FACTION SYSTEM & CITIZEN COMMANDS</span>
+            </div>
+        </div>
+
+        <p style="color: #b0b0b0; line-height: 1.8;">
+            Unite multiple settlements under one national banner. Joining or creating a nation updates your chat and TAB badge from <code>[Wanderer]</code> to your nation's royal crest.
         </p>
 
-        <div class="showcase-grid">
-            <div class="showcase-item">
-                <img src="https://zefty.store/images/Screenshot%202026-09-08%20163736.png" alt="Vanilla Enchanting Table Setup" loading="lazy">
-                <div class="showcase-caption">
-                    <i class="fa-solid fa-circle-info" style="color: #ffd700; margin-right: 6px;"></i> Standard 15-bookshelf arrangement unlocks tier-3 custom rolls.
-                </div>
-            </div>
+        <div class="guide-table-wrap">
+            <table class="guide-table">
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Permitted Role</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/n create &lt;name&gt;</code></td>
+                        <td><span class="role-pill role-wanderer">Wanderer</span></td>
+                        <td>Establish a new nation ($100 balance). You become the Sovereign Leader.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/n invite &lt;player&gt;</code></td>
+                        <td><span class="role-pill role-leader">Leader</span></td>
+                        <td>Invite an online player to swear allegiance to your kingdom.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/n join &lt;name&gt;</code></td>
+                        <td><span class="role-pill role-citizen">Citizen</span></td>
+                        <td>Accept a pending invite and automatically trust into national RedProtect claims.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/n sethome</code></td>
+                        <td><span class="role-pill role-leader">Leader</span></td>
+                        <td>Designate your capital's warp coordinates.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/n home</code></td>
+                        <td><span class="role-pill role-all">All Citizens</span></td>
+                        <td>Teleport back to the national capital after a 3-second channel.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/n info [name]</code></td>
+                        <td><span class="role-pill role-all">Anyone</span></td>
+                        <td>Inspect population count, founder, and status of any nation.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/n leave</code></td>
+                        <td><span class="role-pill role-citizen">Citizen</span></td>
+                        <td>Renounce your citizenship and return to [Wanderer] status.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/n disband</code></td>
+                        <td><span class="role-pill role-leader">Leader</span></td>
+                        <td>Permanently dissolve your realm and wipe all citizen affiliations.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
 
-            <div class="showcase-item">
-                <img src="https://zefty.store/images/Screenshot%202026-09-08%20163723.png" alt="Custom Enchantment Showcase" loading="lazy">
-                <div class="showcase-caption">
-                    <i class="fa-solid fa-sparkles" style="color: #ffd700; margin-right: 6px;"></i> Unique sovereign combat, utility, and harvesting enchants revealed on roll.
-                </div>
+    <!-- SECTION 4: STREAM & BEDROCK ACCESSIBILITY -->
+    <article class="guide-card reveal">
+        <div class="guide-header">
+            <div class="guide-header-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="guide-header-text">
+                <h2>4. BEDROCK & STREAM-READY CROSSPLAY</h2>
+                <span>ACCESSIBLE TOUCH COMMANDS</span>
             </div>
         </div>
-    </section>
+
+        <p style="color: #b0b0b0; line-height: 1.8;">
+            Designed specifically for live streams and mobile crossplay players who want fast, responsive survival without getting bogged down by complicated server commands:
+        </p>
+
+        <div class="steps-grid">
+            <div class="step-item">
+                <div class="step-number"><i class="fa-solid fa-bolt" style="font-size: 0.9rem;"></i></div>
+                <h3>Shortcuts</h3>
+                <p>Use single-letter aliases like <code>/n</code> instead of typing <code>/nation</code> on mobile touch keyboards.</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number"><i class="fa-solid fa-hand-pointer" style="font-size: 0.9rem;"></i></div>
+                <h3>One-Click Invites</h3>
+                <p>Whenever a leader invites you to a realm, tap the green <strong>[ACCEPT]</strong> prompt directly in your chat box.</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number"><i class="fa-solid fa-microphone-lines" style="font-size: 0.9rem;"></i></div>
+                <h3>Proximity Comms</h3>
+                <p>Hear allies and enemies directly through Simple Voice Chat during open-world exploration and kingdom wars.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 35px;">
+            <a href="https://discord.gg/5ASkgGyf4f" target="_blank" rel="noopener noreferrer" class="main-btn">
+                <i class="fa-brands fa-discord" style="margin-right: 8px;"></i>JOIN COMMUNITY DISCORD
+            </a>
+        </div>
+    </article>
 
 </main>
 
@@ -352,6 +319,31 @@
     <p>© 2026 ZEFTY MC — All Rights Reserved</p>
     <a href="https://phantomichost.com/" target="_blank" rel="noopener noreferrer" class="host-link">Powered by PHANTOMIC HOST</a>
 </footer>
+
+<!-- CURSOR GLOW EFFECT -->
+<div class="cursor-glow"></div>
+
+<script>
+const glow = document.querySelector('.cursor-glow');
+document.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+});
+
+const reveals = document.querySelectorAll('.reveal');
+function revealSections(){
+    reveals.forEach(reveal => {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+        if(revealTop < windowHeight - 100){
+            reveal.classList.add('active');
+        }
+    });
+}
+
+revealSections();
+window.addEventListener('scroll', revealSections);
+</script>
 
 </body>
 </html>
