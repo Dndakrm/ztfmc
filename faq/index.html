@@ -7,8 +7,8 @@
     <!-- SEO Primary Meta Tags -->
     <title>Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN</title>
     <meta name="title" content="Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN">
-    <meta name="description" content="Answers to common questions about joining ZEFTY MC Season 7: Project Sovereign. Connection IPs, default port 19132 for Bedrock, version support (1.18 to latest), and griefing policies.">
-    <meta name="keywords" content="ZEFTY MC FAQ, Minecraft Server Port, Bedrock Port 19132, Minecraft Crossplay Server, Project Sovereign IP, Towny Server Rules">
+    <meta name="description" content="Common questions and answers regarding territory protection, nations, crossplay connection, and gameplay mechanics on ZEFTY MC Season 7.">
+    <meta name="keywords" content="ZEFTY MC FAQ, Minecraft Claiming FAQ, RedProtect Pagar Sign Help, How to join ZEFTY MC Bedrock, Minecraft Project Sovereign">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#d4af37">
     <link rel="canonical" href="https://zeftymc.com/faq/">
@@ -17,63 +17,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zeftymc.com/faq/">
     <meta property="og:title" content="Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN">
-    <meta property="og:description" content="Learn how to connect via Java and Bedrock, supported client versions, claiming rules, and server policies.">
+    <meta property="og:description" content="Get answers about land claiming with fences, sovereign nations, Bedrock support, and server rules.">
     <meta property="og:image" content="https://zefty.store/images/zefty.png">
 
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://zeftymc.com/faq/">
     <meta property="twitter:title" content="Frequently Asked Questions | ZEFTY MC S7: PROJECT SOVEREIGN">
-    <meta property="twitter:description" content="Connection details, version compatibility, and rules for ZEFTY MC Season 7.">
+    <meta property="twitter:description" content="Essential answers for all citizens of ZEFTY MC Season 7.">
     <meta property="twitter:image" content="https://zefty.store/images/zefty.png">
-
-    <!-- Structured Data (JSON-LD FAQ Schema) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is the server address and port to connect?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Java players connect directly using play.zeftymc.com without any custom port numbers. Bedrock players connect using Server Address play.zeftymc.com and the default Bedrock port 19132."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What Minecraft versions are supported?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The native server version runs on 1.21, but players running versions down to 1.18 through the latest release can connect seamlessly. 1.20+ is recommended for optimal feature support."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can cracked accounts join?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, both official premium Mojang/Microsoft accounts and offline/cracked clients are supported with in-game authentication."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is griefing allowed?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Unclaimed land in the wilderness is vulnerable, but claimed towns and national territories are protected by Towny. Explosions automatically rollback damaged blocks and container contents."
-          }
-        }
-      ]
-    }
-    </script>
 
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -103,85 +61,71 @@
 <section class="hero">
     <div class="hero-content">
         <div class="season-badge">CITIZEN ARCHIVES</div>
-        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <h1>FREQUENTLY ASKED</h1>
         <p>
-            Everything you need to know about connections, platform crossplay, client versions, and sovereign governance.
+            Find immediate answers regarding territory boundaries, sovereign realms, Bedrock connectivity, and server mechanics.
         </p>
     </div>
 </section>
 
-<!-- FAQ ENTRIES -->
-<section class="faq-section">
+<!-- FAQ SECTION -->
+<main class="faq-section">
 
-    <!-- CONNECTION & PORTS -->
-    <div class="faq-box reveal">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <i class="fa-solid fa-network-wired" style="color: #ffd700; font-size: 1.2rem;"></i>
-            <h2 style="margin-bottom: 0;">How do I connect to the server?</h2>
-        </div>
+    <article class="faq-box reveal">
+        <h2><i class="fa-solid fa-fence" style="color: #ffd700; margin-right: 12px;"></i>How do I claim and protect my land?</h2>
         <p>
-            Connect directly using our universal domain <strong>play.zeftymc.com</strong>:
+            We use the classic fence-and-sign method via RedProtect. Enclose your perimeter completely with any wooden fence, attach a wooden sign to any post, write <code>[rp]</code> on line 1, and your desired claim name on line 2. Once placed, the text turns blue and your land is fully protected from sky to bedrock.
         </p>
-        <div style="margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
-            <div style="background: rgba(7, 6, 10, 0.6); padding: 14px 18px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2);">
-                <strong style="color: #ffd700; display: block; margin-bottom: 4px;"><i class="fa-brands fa-java" style="margin-right: 6px;"></i>Java Edition</strong>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #ffffff;">play.zeftymc.com</span>
-                <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 4px;">No port suffix needed (default :25565 resolved automatically).</span>
-            </div>
-            <div style="background: rgba(7, 6, 10, 0.6); padding: 14px 18px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2);">
-                <strong style="color: #ffd700; display: block; margin-bottom: 4px;"><i class="fa-solid fa-mobile-screen" style="margin-right: 6px;"></i>Bedrock Edition</strong>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #ffffff;">IP: play.zeftymc.com</span><br>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: #ffd700;">Port: 19132</span>
-                <span style="display: block; font-size: 0.8rem; color: #888; margin-top: 4px;">Uses the standard default Bedrock port.</span>
-            </div>
-        </div>
-    </div>
+    </article>
 
-    <!-- VERSION SUPPORT -->
-    <div class="faq-box reveal">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <i class="fa-solid fa-code-branch" style="color: #ffd700; font-size: 1.2rem;"></i>
-            <h2 style="margin-bottom: 0;">What versions can join?</h2>
-        </div>
+    <article class="faq-box reveal">
+        <h2><i class="fa-solid fa-hourglass-end" style="color: #ffd700; margin-right: 12px;"></i>Will my claim expire or get deleted from upkeep taxes?</h2>
         <p>
-            The world runs natively on <strong>1.21</strong> with backwards compatibility supporting clients from <strong>1.18 up to the latest release</strong>. For the smoothest gameplay, latest block models, and optimal visual fidelity, client versions <strong>1.20 and above</strong> are strongly recommended.
+            <strong>No.</strong> Unlike Towny, there is no daily midnight upkeep tax or bank maintenance debt. You never have to worry about your town dissolving because you went on vacation or missed a daily payment. Your claim remains secure as long as you are an active member of our community.
         </p>
-    </div>
+    </article>
 
-    <!-- CRACKED & PREMIUM -->
-    <div class="faq-box reveal">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <i class="fa-solid fa-key" style="color: #ffd700; font-size: 1.2rem;"></i>
-            <h2 style="margin-bottom: 0;">Is ZEFTY MC free / cracked friendly?</h2>
-        </div>
+    <article class="faq-box reveal">
+        <h2><i class="fa-solid fa-crown" style="color: #ffd700; margin-right: 12px;"></i>What are Sovereign Nations and how do they work?</h2>
         <p>
-            Yes. Both official premium Mojang/Microsoft accounts and offline/cracked players can join. Official accounts authenticate automatically, while non-premium players secure their identity through our password registration system.
+            Nations are organized coalitions of players. Found one using <code>/n create &lt;name&gt;</code> ($100 in-game balance) to replace your <code>[Wanderer]</code> status with your kingdom's crest in TAB and chat. Leaders can recruit citizens using <code>/n invite &lt;player&gt;</code>, set national rally points with <code>/n sethome</code>, and travel back anytime via <code>/n home</code>.
         </p>
-    </div>
+    </article>
 
-    <!-- GRIEFING & PROTECTION -->
-    <div class="faq-box reveal">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <i class="fa-solid fa-shield-halved" style="color: #ffd700; font-size: 1.2rem;"></i>
-            <h2 style="margin-bottom: 0;">Is griefing allowed?</h2>
-        </div>
+    <article class="faq-box reveal">
+        <h2><i class="fa-solid fa-mobile-screen" style="color: #ffd700; margin-right: 12px;"></i>Can Bedrock (Mobile / PE / Console) players play smoothly?</h2>
         <p>
-            Unclaimed wilderness has no protection and is subject to open-world survival risks. However, land claimed under a <strong>Towny settlement</strong> is protected. In the event of accidental creeper detonations or mob attacks inside your borders, our rollback system will automatically reconstruct the destroyed blocks and restore the contents of damaged chests.
+            Yes! We run native Geyser and Floodgate integration on Paper 1.21.x. Bedrock players connect using <code>play.zeftymc.com</code> with the default Bedrock port <code>19132</code>. All commands are optimized with short single-letter aliases (e.g., <code>/n</code>) and clickable chat buttons so you don't have to type long strings on touchscreen keyboards.
         </p>
-    </div>
+    </article>
 
-    <!-- HOW TO PLAY / COMMANDS -->
-    <div class="faq-box reveal">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <i class="fa-solid fa-book-bookmark" style="color: #ffd700; font-size: 1.2rem;"></i>
-            <h2 style="margin-bottom: 0;">Where can I learn the mechanics and commands?</h2>
-        </div>
+    <article class="faq-box reveal">
+        <h2><i class="fa-solid fa-shield-halved" style="color: #ffd700; margin-right: 12px;"></i>Can other players grief my chests or blow up my base?</h2>
         <p>
-            Visit our dedicated <a href="/how-to-play/" style="color: #ffd700; font-weight: 600; text-decoration: none;">How To Play Guide</a> for instructions on town founding, land expansion costs, treasury deposits, and custom enchantment setups.
+            Not inside your claimed land. Inside your fence perimeter, RedProtect automatically locks all storage containers (chests, barrels, hoppers) and negates creeper explosions, TNT damage, and unauthorized block tampering. Outside claimed territory, the wilderness is open survival.
         </p>
-    </div>
+    </article>
 
-</section>
+    <article class="faq-box reveal">
+        <h2><i class="fa-solid fa-coins" style="color: #ffd700; margin-right: 12px;"></i>How do I earn money to establish a nation or expand?</h2>
+        <p>
+            You can earn in-game currency through multiple survival activities:
+        </p>
+        <ul style="list-style: none; padding-left: 0; margin-top: 10px; display: grid; gap: 8px;">
+            <li><i class="fa-solid fa-check" style="color: #ffd700; margin-right: 8px;"></i>Leveling up your skills through <strong>AuraSkills</strong> (mining, foraging, combat).</li>
+            <li><i class="fa-solid fa-check" style="color: #ffd700; margin-right: 8px;"></i>Selling resources in the server market using <code>/shop</code>.</li>
+            <li><i class="fa-solid fa-check" style="color: #ffd700; margin-right: 8px;"></i>Trading goods directly with other players in community towns.</li>
+        </ul>
+    </article>
+
+    <article class="faq-box reveal">
+        <h2><i class="fa-solid fa-user-plus" style="color: #ffd700; margin-right: 12px;"></i>How do I give a friend build access to my house?</h2>
+        <p>
+            Stand inside your claim and type <code>/rp addmember &lt;player&gt;</code>. To revoke access, use <code>/rp removemember &lt;player&gt;</code>.
+        </p>
+    </article>
+
+</main>
 
 <footer>
     <p>© 2026 ZEFTY MC — All Rights Reserved</p>
